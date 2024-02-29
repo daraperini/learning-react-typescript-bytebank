@@ -4,7 +4,7 @@ Bytebank is beeing developed during Alura's class *Practicing TypeScript: implem
 
 > In progress...
 
-To see the final result, click [here](https://learning-react-typescript-bytebank.vercel.app/).
+To see what Bytebank's looking like, click [here](https://learning-react-typescript-bytebank.vercel.app/).
 
 ## Used tools:
 
@@ -21,7 +21,7 @@ O Bytebank está sendo desenvolvido durante o curso *TypeScript na prática: imp
 
 > Em andamento...
 
-Para acessar o resultado final da página, clique [aqui](https://learning-react-typescript-bytebank.vercel.app/).
+Para acessar o resultado atual do Bytebank, clique [aqui](https://learning-react-typescript-bytebank.vercel.app/).
 
 ## Ferramentas utilizadas:
 
