@@ -8,7 +8,7 @@ To see what Bytebank's looking like, click [here](https://learning-react-typescr
 
 ## Used tools:
 
-* JavaScript
+* Vanilla JS
 * TypeScript
 
 *(Alura is a Brazilian technology school and for acessibility reasons this code is in Portuguese)*
@@ -25,5 +25,5 @@ Para acessar o resultado atual do Bytebank, clique [aqui](https://learning-react
 
 ## Ferramentas utilizadas:
 
-* JavaScript
+* Vanilla JS
 * TypeScript
