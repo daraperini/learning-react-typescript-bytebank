@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "target": "ES2022", //versão do js que vamos usar pra compilar
+        "outDir": "./dist/js/", //local pra onde devem ir os arquivos compilados
+        "noEmitOnError": true //não compilar se tiver um erro no ts
+    },
+    "include": [
+        "./src/" // /++/+   onde procura os arquivos ts para compilar em js
+    ]
+}
