@@ -1,6 +1,7 @@
 import { Transacao } from "./Transacao.js";
 import { TipoTransacao } from "./TipoTransacao.js";
 import { GrupoTransacao } from "./GrupoTransacao.js";
+import { ResumoTransacoes } from "./ResumoTransacoes.js";
 
 let saldo: number = JSON.parse(localStorage.getItem("saldo")) || 0;
 const transacoes: Transacao[] =
@@ -70,6 +71,32 @@ const Conta = {
     });
 
     return gruposTransacoes;
+  },
+
+  agruparTransacoes(): ResumoTransacoes {
+    const resumo: ResumoTransacoes = {
+      totalDepositos: 0,
+      totalTransferencias: 0,
+      totalPagamentosBoleto: 0,
+    };
+
+    this.transacoes.forEach((transacao) => {
+      switch (transacao.tipoTransacao) {
+        case TipoTransacao.DEPOSITO:
+          resumo.totalDepositos += transacao.valor;
+          break;
+
+        case TipoTransacao.TRANSFERENCIA:
+          resumo.totalTransferencias += transacao.valor;
+          break;
+
+        case TipoTransacao.PAGAMENTO_BOLETO:
+          resumo.totalPagamentosBoleto += transacao.valor;
+          break;
+      }
+    });
+
+    return resumo;
   },
 
   registrarTransacao(novaTransacao: Transacao): void {
