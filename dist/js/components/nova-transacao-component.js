@@ -1,6 +1,6 @@
 import Conta from "../types/Conta.js";
 import SaldoComponent from "./saldo-component.js";
-import ExtratoComponent from "./estrato-component.js";
+import ExtratoComponent from "./extrato-component.js";
 const elementoFormulario = document.querySelector(".block-nova-transacao form");
 elementoFormulario.addEventListener("submit", (event) => {
     try {
